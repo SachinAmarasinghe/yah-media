@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$primary: #f6851f;
+$black: #1a0e03;
+$white: #ffffff;
+$gray-595959: #595959;
+$gray-707070: #707070;
+$gray-E4E4E4: #e4e4e4;
+$gray-F5F2F0: #f5f2f0;
+
+@mixin fontThin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+@mixin fontRegular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+@mixin fontSemibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+@mixin fontBold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}

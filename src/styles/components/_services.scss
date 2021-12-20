@@ -1,0 +1,67 @@
+.services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  .react-tabs {
+    display: flex;
+    .react-tabs__tab-list {
+      list-style: none;
+      padding-left: 0;
+      padding-right: 30px;
+      .react-tabs__tab {
+        margin: 5px 0;
+        padding: 10px 0;
+        border-radius: 5px;
+        min-width: 300px;
+        cursor: pointer;
+        color: $gray-595959;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          background-color: #fff5ec;
+          padding-left: 20px;
+        }
+        &.react-tabs__tab--selected {
+          background-color: $primary;
+          padding-left: 20px;
+          color: white;
+        }
+      }
+    }
+    .react-tabs__tab-panel {
+    }
+  }
+
+  .service-card {
+    max-width: 900px;
+    background-color: #fff5ec;
+    border-radius: 5px;
+    padding: 40px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .service-card-img {
+      background-color: #f6851f26;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      img {
+        height: 100px;
+      }
+    }
+    h3 {
+      color: $primary;
+      @include fontBold;
+      font-size: 25px;
+      margin: 10px 0 10px 0;
+    }
+    p {
+      color: $gray-595959;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+  }
+}

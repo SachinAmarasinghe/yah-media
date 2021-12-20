@@ -1,0 +1,54 @@
+@import "variables";
+@import "typography";
+@import "button";
+@import "animate";
+@import "./components/header";
+@import "./pages/index";
+@import "./form";
+@import "./components/footer";
+@import "./components/work-card";
+@import "./components/services";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-text {
+  label {
+    @include fontSemibold;
+    color: $primary;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  h2 {
+    @include fontBold;
+    font-size: 35px;
+    line-height: 45px;
+    color: $black;
+    margin: 0 0 0 0;
+  }
+}
+
+.styles_scroll-to-top__2A70v {
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.bg {
+  background-image: url(../images/contact-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}

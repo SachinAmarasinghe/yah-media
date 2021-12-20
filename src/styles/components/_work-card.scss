@@ -1,0 +1,25 @@
+.work-card {
+  width: calc(50% - 60px);
+  margin: 0 30px 50px 30px;
+  &-image {
+    background-color: #fff8f1;
+    height: 250px;
+    border-radius: 35px;
+    margin-bottom: 35px;
+  }
+  h5 {
+    font-size: 26px;
+    color: $black;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 16px;
+    color: $gray-707070;
+  }
+  &.lg {
+    .work-card-image {
+      height: 350px;
+    }
+  }
+}
