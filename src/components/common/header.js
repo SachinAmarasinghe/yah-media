@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "./menu/menu";
 import logo from "../../images/icon.png";
+import { Link } from "gatsby";
 
 class Header extends React.Component {
   constructor(props) {
@@ -36,7 +37,10 @@ class Header extends React.Component {
     return (
       <nav className={`header ${visibilityClass}`}>
         <div className="container">
-          <img src={logo} alt="yah logo" className="logo" />
+          <Link to="/">
+            <img src={logo} alt="yah logo" className="logo" />
+          </Link>
+
           <Menu />
         </div>
       </nav>

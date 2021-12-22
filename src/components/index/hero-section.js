@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import ReactWOW from "react-wow";
+import hvideo from "../../images/hero/hero_video.mp4";
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
+      <video autoPlay muted loop id="myVideo">
+        <source src={hvideo} type="video/mp4" />
+      </video>
       <div className="container">
         <ReactWOW animation="fadeIn" delay=".5s">
           <h1>Say yah! to Growth.</h1>

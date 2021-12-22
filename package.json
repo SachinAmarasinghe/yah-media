@@ -34,6 +34,7 @@
     "react-scroll-to-top": "^1.0.8",
     "react-tabs": "^3.2.3",
     "react-wow": "^1.0.0",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }

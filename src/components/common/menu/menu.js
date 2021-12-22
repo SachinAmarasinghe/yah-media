@@ -1,23 +1,34 @@
 import { Link } from "gatsby";
 import React from "react";
+import Scroll from "../scroll";
 
 const Menu = () => {
   return (
     <ul className="menu">
       <li>
-        <Link to="#what-we-do">What we do</Link>
+        <Scroll type="id" element="what-we-do">
+          <a>What we do</a>
+        </Scroll>
       </li>
       <li>
-        <Link to="#our-work">Our work</Link>
+        <Scroll type="id" element="our-work">
+          <a>Our work</a>
+        </Scroll>
       </li>
       <li>
-        <Link to="#">Testimonials</Link>
+        <Scroll type="id" element="testimonials">
+          <a>Testimonials</a>
+        </Scroll>
       </li>
       <li>
-        <Link to="#partners">Our trusted partners</Link>
+        <Scroll type="id" element="partners">
+          <a>Our trusted partners</a>
+        </Scroll>
       </li>
       <li>
-        <Link to="#contact">Contact</Link>
+        <Scroll type="id" element="contact">
+          <a>Contact</a>
+        </Scroll>
       </li>
     </ul>
   );
