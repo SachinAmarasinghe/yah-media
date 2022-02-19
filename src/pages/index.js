@@ -8,6 +8,8 @@ import WhatWeDoSection from "../components/index/what-we-do-section";
 import ScrollToTop from "react-scroll-to-top";
 import "../styles/style.scss";
 
+// const HeroSection = React.lazy(()=>import('../components/index/hero-section'))
+
 const IndexPage = () => {
   return (
     <Layout>

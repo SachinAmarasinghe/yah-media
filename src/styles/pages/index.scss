@@ -47,12 +47,49 @@
   .container {
     z-index: 99;
   }
+  @media screen and (max-width: 768px) {
+    height: calc(100vh - 20px);
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      width: auto;
+    }
+  }
 }
 
 // what we do section
 .whatwedo-section {
   padding-top: 80px;
   padding-bottom: 80px;
+  @media screen and (max-width: 768px) {
+    .services {
+      .react-tabs {
+        flex-direction: column;
+        .react-tabs__tab-list {
+          display: flex;
+          flex-wrap: wrap;
+          .react-tabs__tab {
+            min-width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid rgb(243, 243, 243);
+            margin-right: 5px;
+            font-size: 12px;
+            &--selected {
+              padding-left: 10px !important;
+            }
+          }
+        }
+      }
+      .service-card {
+        padding: 15px;
+      }
+    }
+  }
 }
 // partners section
 .partners-section {
@@ -75,6 +112,14 @@
         height: 50px;
         width: auto;
         margin: 20px 40px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .partners-wrapper {
+      img {
+        height: 30px !important;
+        margin: 10px !important;
       }
     }
   }
@@ -149,6 +194,11 @@
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .contact-wrapper {
+      flex-direction: column;
+    }
+  }
 }
 
 .our-work-section {
@@ -188,6 +238,38 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    max-height: 1070px;
+    max-height: 1500px;
+  }
+  @media screen and (max-width: 768px) {
+    .work-wrapper {
+      max-height: none;
+    }
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      h2 {
+        margin-bottom: 10px;
+      }
+      .explore {
+        font-size: 12px;
+        img {
+          height: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-text {
+    label {
+      font-size: 12px !important;
+    }
+    h2 {
+      font-size: 20px !important;
+      line-height: 22px !important;
+    }
   }
 }

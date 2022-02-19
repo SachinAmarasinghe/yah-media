@@ -2,6 +2,9 @@ import React from "react";
 import Menu from "./menu/menu";
 import logo from "../../images/icon.png";
 import { Link } from "gatsby";
+import Hamburger from "./menu/hamburger";
+import MenuMobile from "./menu/mobile-menu";
+import { slide as MobileMenu } from "react-burger-menu";
 
 class Header extends React.Component {
   constructor(props) {
@@ -25,6 +28,12 @@ class Header extends React.Component {
     }
   };
 
+  toggleMenu = (menuActive) => {
+    this.setState((prevState) => ({
+      menuActive: !prevState.menuActive,
+    }));
+  };
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
@@ -40,7 +49,6 @@ class Header extends React.Component {
           <Link to="/">
             <img src={logo} alt="yah logo" className="logo" />
           </Link>
-
           <Menu />
         </div>
       </nav>
