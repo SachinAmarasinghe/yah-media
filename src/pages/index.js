@@ -7,19 +7,26 @@ import PartnersSection from "../components/index/partners-section";
 import WhatWeDoSection from "../components/index/what-we-do-section";
 import ScrollToTop from "react-scroll-to-top";
 import "../styles/style.scss";
-
-// const HeroSection = React.lazy(()=>import('../components/index/hero-section'))
+import Fade from "react-reveal/Fade";
 
 const IndexPage = () => {
   return (
     <Layout>
       <HeroSection />
       <div className="bg">
-        <WhatWeDoSection />
-        <OurWorkSection />
+        <Fade delay={600} bottom={true}>
+          <WhatWeDoSection />
+        </Fade>
+        <Fade delay={600} bottom={true}>
+          <OurWorkSection />
+        </Fade>
       </div>
-      <PartnersSection />
-      <ContactSection />
+      <Fade delay={600} bottom={true}>
+        <PartnersSection />
+      </Fade>
+      <Fade delay={600} bottom={true}>
+        <ContactSection />
+      </Fade>
       <ScrollToTop smooth />
     </Layout>
   );

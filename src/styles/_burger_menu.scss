@@ -1,12 +1,15 @@
+@import "../styles/variables";
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
-  top: 36px;
-  right: 0;
+  top: 18px;
+  right: 20px;
   display: none;
-  @media screen and (max-width: 768px) {
+  z-index: 9999;
+  @media screen and (max-width: 991px) {
     display: inline-block;
   }
 }
@@ -29,7 +32,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: white;
+  background: $primary;
 }
 
 /*
@@ -39,24 +42,32 @@
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  background-color: $black;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: $black;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: $black;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+  color: $primary;
+  padding: 0.3em;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding-bottom: 20px;
+    }
+  }
 }
 
 /* Individual item */

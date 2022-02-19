@@ -32,6 +32,7 @@
     "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-reveal": "^1.2.2",
     "react-scroll-to-top": "^1.0.8",
     "react-tabs": "^3.2.3",
     "react-wow": "^1.0.0",

@@ -1,13 +1,9 @@
-import { Link } from "gatsby";
-import React, { useState } from "react";
+import React from "react";
 import Scroll from "../scroll";
 
-const MenuMobile = (props) => {
+const MenuMobile = () => {
   return (
-    <div
-      id="main-menu-mobile"
-      className={`main-menu-mobile ${props.active ? "open" : ""}`}
-    >
+    <div className="menu-mobile">
       <ul>
         <li>
           <Scroll type="id" element="what-we-do">

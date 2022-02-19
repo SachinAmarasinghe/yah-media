@@ -9,6 +9,7 @@ import web from "../../images/icons/web.png";
 import ui from "../../images/icons/ui.png";
 import mobile from "../../images/icons/mobile.png";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Fade from "react-reveal/Fade";
 
 const Services = () => {
   return (

@@ -3,6 +3,7 @@ import Footer from "./footer";
 import Header from "./header";
 import { elastic as MobileMenu } from "react-burger-menu";
 import menuIcon from "../../images/icons/menu.svg";
+import MenuMobile from "./menu/mobile-menu";
 
 const Layout = ({ children }) => {
   return (
@@ -12,15 +13,7 @@ const Layout = ({ children }) => {
         right
         customBurgerIcon={<img src={menuIcon} />}
       >
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
+        <MenuMobile/>
       </MobileMenu>
       <div id="page-wrap">
         <Header />
