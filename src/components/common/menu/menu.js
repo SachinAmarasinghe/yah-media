@@ -15,11 +15,11 @@ const Menu = () => {
           <a>Our work</a>
         </Scroll>
       </li>
-      <li>
+      {/* <li>
         <Scroll type="id" element="testimonials">
           <a>Testimonials</a>
         </Scroll>
-      </li>
+      </li> */}
       <li>
         <Scroll type="id" element="partners">
           <a>Our trusted partners</a>

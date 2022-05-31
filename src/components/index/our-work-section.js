@@ -6,6 +6,7 @@ import Vip from "../../images/our-work/vip.png";
 import yamios from "../../images/our-work/yamios.png";
 import concepts from "../../images/our-work/92concepts.png";
 import birbaby from "../../images/our-work/birbaby.png";
+import melandom from "../../images/our-work/melandom.png";
 
 const OurWorkSection = () => {
   return (
@@ -44,11 +45,11 @@ const OurWorkSection = () => {
             link="https://yamiospizza.com.au"
           />
           <WorkCard
-            image={birbaby}
-            title="Birbaby"
+            image={melandom}
+            title="Melandom"
             description="Birbaby is the top online retailer of baby gift baskets. Order quality baby products like apparel, blankets, toys and more, delivered to your door step."
             size="lg"
-            link="https://birbaby.com"
+            link="https://melandom.com.au"
           />
         </div>
       </div>
