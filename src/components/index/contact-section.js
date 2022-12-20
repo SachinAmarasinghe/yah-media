@@ -51,7 +51,7 @@ const ContactSection = () => {
             ></textarea>
             <button className="btn btn-primary icon-right">
               Contact
-              <img src={arrow} />
+              <img src={arrow} alt="contact icon" />
             </button>
           </form>
         </div>

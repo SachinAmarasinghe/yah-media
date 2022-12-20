@@ -47,7 +47,7 @@ const OurWorkSection = () => {
           <WorkCard
             image={melandom}
             title="Melandom"
-            description="Birbaby is the top online retailer of baby gift baskets. Order quality baby products like apparel, blankets, toys and more, delivered to your door step."
+            description="Melandom is the top online retailer of beauty products. Order quality beauty products like hair wigs, foundations, and more, delivered to your door step."
             size="lg"
             link="https://melandom.com.au"
           />
